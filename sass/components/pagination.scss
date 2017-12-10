@@ -1,0 +1,26 @@
+
+.pagination {
+    margin-left: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        @include list-base;
+        li {
+            display: inline-block;
+            .arrow {
+                display: flex;
+                width: 35px;
+                height: 35px;
+                background: $primary-bg-color;
+                text-decoration: none;
+                .fa {
+                    color: $second-color;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+
