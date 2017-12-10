@@ -141,6 +141,15 @@
             padding:10px 0 14px;
             margin-right: 60px;
             border-bottom: 1px solid $color-light-grey;
+
+            a{
+                text-decoration: none;
+                color: inherit;
+                @include transition(0.35s);
+                &:hover {
+                    color: $color-danger;
+                }
+            }
         }
     }
 }
