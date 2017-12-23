@@ -5,8 +5,8 @@
     &-nav {
         color: $primary-color;
         margin: 0 auto 25px;
-        a{
-            &:hover:before{
+        a {
+            &:hover:before {
                 background: $primary-color;
             }
         }

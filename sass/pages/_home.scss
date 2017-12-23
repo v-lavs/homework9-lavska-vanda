@@ -1,14 +1,29 @@
 
 .preview {
-    display: flex;
-    align-items: center;
-    background: url('../img/rock-singer.jpg') center no-repeat;
+    position: relative;
+    min-height: 700px;
+        .preview-slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    &-slide {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     min-height: 700px;
     padding: 103px 0 100px;
     position: relative;
+    }
     .container {
+        position: relative;
         text-align: center;
+        padding: 170px 0;
+        z-index: 2;
     }
     .timer {
         width: 100%;
@@ -20,7 +35,7 @@
         bottom: 0;
         z-index: 1;
         &:before {
-           content: '';
+            content: '';
             display: block;
             width: 75%;
             height: 3px;

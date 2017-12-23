@@ -4,23 +4,20 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
-    ul {
-        @include list-base;
-        li {
-            display: inline-block;
-            .arrow {
-                display: flex;
-                width: 35px;
-                height: 35px;
-                background: $primary-bg-color;
-                text-decoration: none;
-                .fa {
-                    color: $second-color;
-                    margin: auto;
-                }
-            }
+    .slick-arrow {
+        border: none;
+        width: 35px;
+        height: 35px;
+        background: $primary-bg-color;
+        margin-left: 5px;
+        outline:none;
+        &:hover {
+            background: darken( $primary-bg-color, 10% )
+        }
+        .fa {
+            color: $second-color;
+            margin: auto;
         }
     }
 }
-
 

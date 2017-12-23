@@ -19,8 +19,21 @@
     appearance: $value;
 }
 
+@mixin opacity ($value) {
+    opacity: $value;
+    -moz-opacity: $value;
+}
+
 @mixin list-base {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+@mixin transform($translate) {
+    -moz-transform: $translate;
+    -o-transform: $translate;
+    -ms-transform: $translate;
+    -webkit-transform: $translate;
+    transform: $translate;
 }
